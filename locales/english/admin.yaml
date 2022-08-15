@@ -1,0 +1,8 @@
+lock_message: "🔒 %{channel} has been locked"
+unlock_message: "🔓 %{channel} has been unlocked"
+lockall_message: "🔒 Locked all channels"
+unlockall_message: "🔒 Unlocked all channels"
+bans: "Server ban list ⇏ "
+prefix_type: "Type something!"
+prefix_length: " You need set prefix lower 5 length"
+prefix_embed: "New prefix in this guild is ⇏ "

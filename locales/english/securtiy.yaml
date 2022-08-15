@@ -1,0 +1,7 @@
+user_undefined: " Please mention someone to add in whitelist"
+whitelist-remove: " Removed in whitelist"
+whitelist-add: " Added to whitelist"
+whitelist-zero: " No one whitelisted!"
+whitelist-no: " Not in whitelist"
+whitelist-yes: " This man is whitelisted"
+whitelist-user: "Whitelisted User"
