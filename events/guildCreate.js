@@ -35,5 +35,5 @@ Version: ${Discord.version}`
 
 );
        
- 		bot.channels.cache.get("797470185476718592").send({embeds:[logsEmbed]});     
+ 		bot.channels.cache.get("797470185476718592").send({embeds:[logsEmbed]}).catch(()=>{});     
  }};
