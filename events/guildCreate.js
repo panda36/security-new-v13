@@ -34,6 +34,6 @@ Ping: ${Math.round(bot.ws.ping)}ms
 Version: ${Discord.version}`
 
 );
-       message.channel.send({embeds:[logsEmbed]})
- 		bot.channels.cache.get("891641446283759646").send(logsEmbed);     
+       
+ 		bot.channels.cache.get("797470185476718592").send({embeds:[logsEmbed]});     
  }};
