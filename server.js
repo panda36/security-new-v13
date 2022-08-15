@@ -83,7 +83,7 @@ bot.on("ready", () => {
 });
 
 bot.on("ready", () => {
-  bot.user.setActivity("#help | version: 1.0.0", { type: "WATCHING" });
+  bot.user.setActivity("p!help | version: 3.0.0", { type: "PLAYING" });
 });
 ///////////
 bot.on("messageCreate", async message => {
