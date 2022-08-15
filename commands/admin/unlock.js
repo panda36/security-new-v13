@@ -1,0 +1,26 @@
+const Discord = require('discord.js')
+const { Color } = require("../../config.js");
+
+module.exports = {
+  name: "unlock",
+  aliases: ["open","unlock"],
+  description: "Unlocks the current or selected text channels",
+  usage: ["s!unlock"],
+  category: ["Moderation"],
+  enabled: true,			  
+  memberPermissions: [ "MANAGE_CHANNELS" ],			
+  botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS","MANAGE_CHANNELS" ],		
+  ownerOnly: false,			
+  cooldown: 6000,
+  run: async (bot, message, args, dev, data) => {
+ message.channel
+      .permissionOverwrites.edit(message.guild.id, {
+        SEND_MESSAGES: true
+      })
+      .then(() => {
+        message.channel.send({content:bot.reva.get(data.lang, "admin","unlock_message", { 
+          channel: `<#${message.channel.id}>`
+     })});
+     });
+   }
+}
