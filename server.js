@@ -31,7 +31,7 @@ global.logChannel = bot.channels.cache.get("891641446283759646")
 global.mongoose = require("mongoose");
 mongoose
   .connect(
-    "",
+    "mongodb+srv://I4merror:Panda0615$@cluster0.rstevik.mongodb.net/?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
