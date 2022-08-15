@@ -97,4 +97,4 @@ bot.on("messageCreate", async message => {
 
 
 
-bot.login("ODUwMTA2NTkxMDUxMzgyNzg0.YLk5dQ.dt0POc-zYUZwfq2NS0EyY4riWjg");
+bot.login("ODYwOTYwMDQ5OTQ5MzExMDI2.GXNwIS.9J05qKGzePVWP6UeT7Q-idcKPC7kcGfn09EU_I");
