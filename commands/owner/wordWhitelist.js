@@ -10,9 +10,9 @@ module.exports = {
   botPermissions: [ "SEND_MESSAGES", "EMBED_LINKS" ],
   cooldown: 10000,
   run: async (bot, message, args, dev) => {
-    if (message.author.id === "768944616724103170") {
-      let data = await Owner.findOne({ ownerCode: "768944616724103170" });
-      if(!data) { Owner.create({ ownerCode: "768944616724103170" });} 
+    if (message.author.id === "565962204327968769") {
+      let data = await Owner.findOne({ ownerCode: "565962204327968769" });
+      if(!data) { Owner.create({ ownerCode: "565962204327968769" });} 
       /*
       worldWhitelist
       */
@@ -27,7 +27,7 @@ module.exports = {
         if(!data.worldWhitelist.find((c) => c.type === user.id)){
         await Owner.findOneAndUpdate(
         {
-          ownerCode: "768944616724103170",
+          ownerCode: "565962204327968769",
         },
         {
           $push: {
@@ -50,7 +50,7 @@ module.exports = {
         if(data.worldWhitelist.find((c) => c.type === user.id)){
         await Owner.findOneAndUpdate(
         {
-          ownerCode: "768944616724103170",
+          ownerCode: "565962204327968769",
         },
         {
           $pull: {
